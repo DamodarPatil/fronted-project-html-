@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Get My Parking</title>
+    <style>
+      .swiper-pagination {
+        margin-top: 40px;
+      }
+
+      .swiper-pagination-bullet {
+        background-color: black;
+        width: 12px;
+        height: 12px;
+        margin-bottom: 10px;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- About Us Section -->
+    <section class="container bg-gray-100 mx-auto py-16 px-4 md:px-8">
+      <div class="text-center mb-8">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-8">
+          About Us
+        </h1>
+        <p class="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+          We make parking easier for everyone involved.
+        </p>
+        <p
+          class="text-base md:text-lg font-semibold text-gray-600 max-w-2xl mx-auto"
+        >
+          Get My Parking was founded in 2015 with the mission to digitize
+          parking globally. We aim to make smart parking accessible and
+          affordable to all businesses so that parking becomes a sub-conscious
+          experience.
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <img
+          src="assets/team.jpg"
+          alt="Get My Parking Team"
+          class="rounded-lg shadow-lg w-full md:max-w-4xl"
+        />
+      </div>
+    </section>
+
+    <!-- We Believe In Section -->
+    <section
+      class="flex bg-green-100 justify-center items-center py-16 px-4 md:px-8"
+    >
+      <div
+        class="bg-green-600 rounded-lg p-6 md:p-8 w-full max-w-4xl mx-auto flex flex-col md:flex-row"
+      >
+        <div
+          class="text-white font-bold text-2xl mt-5 md:mt-0 md:flex-shrink-0 md:pr-8"
+        >
+          We believe in
+        </div>
+        <div class="space-y-6 flex-grow mt-4 md:mt-0">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <h2 class="font-bold text-gray-700 text-xl md:text-2xl">
+              <span class="text-green-500">G</span>rowing Together
+            </h2>
+            <p class="mt-2 text-gray-700">
+              Your growth is our growth - we're willing to go beyond the extra
+              mile so we can grow together as one big team.
+            </p>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <h2 class="font-bold text-gray-700 text-xl md:text-2xl">
+              <span class="text-green-500">M</span>aking a Difference
+            </h2>
+            <p class="mt-2 text-gray-700">
+              We do what we do to make a difference in your life and your
+              parker's. Every minute and dollar you save is a feather on our
+              cap.
+            </p>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <h2 class="font-bold text-gray-700 text-xl md:text-2xl">
+              <span class="text-green-500">P</span>ersistence
+            </h2>
+            <p class="mt-2 text-gray-700">
+              There’s no parking problem we can’t solve - we’ll just keep at it
+              until we have a solution for you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- We Have Fun Building Your Solutions Section -->
+    <section class="container bg-gray-100 mx-auto py-16 px-4 md:px-8">
+      <div class="text-center mb-8">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-8">
+          We have fun building your solutions.
+        </h1>
+
+        <p
+          class="text-base md:text-lg font-semibold text-gray-600 max-w-2xl mx-auto"
+        >
+          At Get My Parking, innovation and creativity are in our DNA. We
+          believe in building our tech from scratch, without external
+          acquisitions, with activities like hackathons and brainstorming
+          sessions that yield powerful parking solutions. Our passionate team
+          develops homegrown tech that makes parking smarter, faster, and more
+          convenient.
+        </p>
+      </div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-4 rounded-lg w-full max-w-4xl mx-auto flex-col md:flex-row"
+      >
+        <!-- First image takes the full height on the left -->
+        <div class="md:col-span-1 md:row-span-2">
+          <img
+            src="assets/team1.jpg"
+            alt="Team working on whiteboard"
+            class="w-full h-full object-cover rounded-lg shadow-lg"
+          />
+        </div>
+        <!-- Next two images side by side on the right -->
+        <div class="md:col-span-2 grid grid-cols-2 gap-4">
+          <img
+            src="assets/team2.jpg"
+            alt="Team brainstorming session"
+            class="w-full h-full object-cover rounded-lg shadow-lg"
+          />
+          <img
+            src="assets/team3.jpg"
+            alt="Team coding session"
+            class="w-full h-full object-cover rounded-lg shadow-lg"
+          />
+        </div>
+        <!-- Fourth image positioned below the second and third images -->
+        <div class="md:col-span-2 md:col-start-2">
+          <img
+            src="assets/team4.jpg"
+            alt="Team discussion"
+            class="w-full h-full object-cover rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white flex items-center justify-center min-h-screen">
+      <div class="p-6 rounded-lg max-w-7xl mx-auto w-full">
+        <h1
+          class="text-4xl md:text-5xl font-bold text-center mb-8 text-gray-800"
+        >
+          Here's what we've been up to!
+        </h1>
+        <div class="flex flex-col md:flex-row md:space-x-10 items-center">
+          <!-- Left Side Years -->
+          <div
+            class="flex flex-row md:flex-col items-center md:items-start md:mr-8 overflow-auto md:overflow-visible mb-6 md:mb-0 justify-center md:justify-start w-full md:w-auto"
+          >
+            <div
+              class="py-2 md:py-4 text-gray-700 text-center md:text-right w-16 md:w-auto"
+            >
+              2015
+            </div>
+            <div
+              class="py-2 md:py-4 text-gray-700 text-center md:text-right w-16 md:w-auto"
+            >
+              2016
+            </div>
+            <div
+              class="py-2 md:py-4 text-gray-700 text-center md:text-right w-16 md:w-auto"
+            >
+              2017
+            </div>
+            <div
+              class="py-2 md:py-4 text-gray-700 text-center md:text-right w-16 md:w-auto"
+            >
+              2018
+            </div>
+            <div
+              class="py-2 md:py-4 text-gray-700 text-center md:text-right w-16 md:w-auto"
+            >
+              2019
+            </div>
+            <div
+              class="py-2 md:py-4 text-gray-700 text-center md:text-right w-16 md:w-auto"
+            >
+              2020
+            </div>
+            <div
+              class="py-2 md:py-4 text-gray-700 text-center md:text-right w-16 md:w-auto"
+            >
+              2021
+            </div>
+            <div
+              class="py-2 md:py-4 text-gray-700 text-center md:text-right w-16 md:w-auto"
+            >
+              2022
+            </div>
+            <div
+              class="py-2 md:py-4 text-purple-700 font-bold text-center md:text-right w-16 md:w-auto"
+            >
+              2023
+            </div>
+            <div
+              class="py-2 md:py-4 text-gray-700 text-center md:text-right w-16 md:w-auto"
+            >
+              2024
+            </div>
+          </div>
+
+          <!-- Right Side Timeline -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-6 gap-x-4 sm:gap-x-6 w-full"
+          >
+            <!-- Each Month Event Card -->
+            <div class="flex flex-col items-center">
+              <p class="text-green-600 font-bold mb-2 text-xl">January</p>
+              <div
+                class="bg-gray-100 p-4 rounded-md shadow-md flex items-center justify-center w-36 sm:w-48 h-24"
+              >
+                <img
+                  src="assets/calendar-clock.svg"
+                  alt="Icon 1"
+                  class="w-8 h-8 mr-3"
+                />
+                <p class="text-gray-700 text-sm text-center">
+                  'Nested Parking' feature launched
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <p class="text-green-600 font-bold mb-2 text-xl">February</p>
+              <div
+                class="bg-gray-100 p-4 rounded-md shadow-md flex items-center justify-center w-36 sm:w-48 h-24"
+              >
+                <img
+                  src="assets/calendar-clock.svg"
+                  alt="Icon 2"
+                  class="w-8 h-8 mr-3"
+                />
+                <p class="text-gray-700 text-sm text-center">
+                  Get My Parking's first international retreat
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <p class="text-green-600 font-bold mb-2 text-xl">March</p>
+              <div
+                class="bg-gray-100 p-4 rounded-md shadow-md flex items-center justify-center w-36 sm:w-48 h-24"
+              >
+                <img
+                  src="assets/calendar-clock.svg"
+                  alt="Icon 3"
+                  class="w-8 h-8 mr-3"
+                />
+                <p class="text-gray-700 text-sm text-center">Live in UAE</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <p class="text-green-600 font-bold mb-2 text-xl">April</p>
+              <div
+                class="bg-gray-100 p-4 rounded-md shadow-md flex items-center justify-center w-36 sm:w-48 h-24"
+              >
+                <img
+                  src="assets/calendar-clock.svg"
+                  alt="Icon 4"
+                  class="w-8 h-8 mr-3"
+                />
+                <p class="text-gray-700 text-sm text-center">
+                  'Pay by Space' feature launched
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <p class="text-green-600 font-bold mb-2 text-xl">May</p>
+              <div
+                class="bg-gray-100 p-4 rounded-md shadow-md flex items-center justify-center w-36 sm:w-48 h-24"
+              >
+                <img
+                  src="assets/calendar-clock.svg"
+                  alt="Icon 5"
+                  class="w-8 h-8 mr-3"
+                />
+                <p class="text-gray-700 text-sm text-center">
+                  Live in Saudi Arabia
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <p class="text-green-600 font-bold mb-2 text-xl">June</p>
+              <div
+                class="bg-gray-100 p-4 rounded-md shadow-md flex items-center justify-center w-36 sm:w-48 h-24"
+              >
+                <img
+                  src="assets/calendar-clock.svg"
+                  alt="Icon 6"
+                  class="w-8 h-8 mr-3"
+                />
+                <p class="text-gray-700 text-sm text-center">
+                  GMP Partner Portal launched
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <p class="text-green-600 font-bold mb-2 text-xl">July</p>
+              <div
+                class="bg-gray-100 p-4 rounded-md shadow-md flex items-center justify-center w-36 sm:w-48 h-24"
+              >
+                <img
+                  src="assets/calendar-clock.svg"
+                  alt="Icon 7"
+                  class="w-8 h-8 mr-3"
+                />
+                <p class="text-gray-700 text-sm text-center">
+                  Launch of 24*7 service & support center
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <p class="text-green-600 font-bold mb-2 text-xl">August</p>
+              <div
+                class="bg-gray-100 p-4 rounded-md shadow-md flex items-center justify-center w-36 sm:w-48 h-24"
+              >
+                <img
+                  src="assets/calendar-clock.svg"
+                  alt="Icon 8"
+                  class="w-8 h-8 mr-3"
+                />
+                <p class="text-gray-700 text-sm text-center">
+                  Live in California with a new municipality
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <p class="text-green-600 font-bold mb-2 text-xl">September</p>
+              <div
+                class="bg-gray-100 p-4 rounded-md shadow-md flex items-center justify-center w-36 sm:w-48 h-24"
+              >
+                <img
+                  src="assets/calendar-clock.svg"
+                  alt="Icon 9"
+                  class="w-8 h-8 mr-3"
+                />
+                <p class="text-gray-700 text-sm text-center">
+                  New version of GMP QR payments launched
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <p class="text-green-600 font-bold mb-2 text-xl">October</p>
+              <div
+                class="bg-gray-100 p-4 rounded-md shadow-md flex items-center justify-center w-36 sm:w-48 h-24"
+              >
+                <img
+                  src="assets/calendar-clock.svg"
+                  alt="Icon 10"
+                  class="w-8 h-8 mr-3"
+                />
+                <p class="text-gray-700 text-sm text-center">
+                  GMP AI - Express Lane launched
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <p class="text-green-600 font-bold mb-2 text-xl">November</p>
+              <div
+                class="bg-gray-100 p-4 rounded-md shadow-md flex items-center justify-center w-36 sm:w-48 h-24"
+              >
+                <img
+                  src="assets/calendar-clock.svg"
+                  alt="Icon 11"
+                  class="w-8 h-8 mr-3"
+                />
+                <p class="text-gray-700 text-sm text-center">
+                  Locations added in 7 new states in the USA
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <p class="text-green-600 font-bold mb-2 text-xl">December</p>
+              <div
+                class="bg-gray-100 p-4 rounded-md shadow-md flex items-center justify-center w-36 sm:w-48 h-24"
+              >
+                <img
+                  src="assets/calendar-clock.svg"
+                  alt="Icon 12"
+                  class="w-8 h-8 mr-3"
+                />
+                <p class="text-gray-700 text-sm text-center">
+                  New event parking feature launched
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-100">
+      <div class="container max-w-full p-6">
+        <!-- Header -->
+        <div class="text-center mb-12">
+          <h1 class="text-4xl font-bold mb-4">We're in this together!</h1>
+          <p class="text-gray-600">
+            Our team consists of superstars from across the globe, building and
+            boosting our impactful solutions.
+          </p>
+        </div>
+
+        <!-- Upper Row of Images -->
+        <div class="images">
+          <div class="images-slide grid grid-cols-5 gap-4 mb-8">
+            <img
+              src="assets/profileimage.jpg"
+              alt="Person 1"
+              class="rounded-lg object-cover"
+            />
+            <img
+              src="assets/profileimage.jpg"
+              alt="Person 2"
+              class="rounded-lg object-cover"
+            />
+            <img
+              src="assets/profileimage.jpg"
+              alt="Person 3"
+              class="rounded-lg object-cover"
+            />
+            <img
+              src="assets/profileimage.jpg"
+              alt="Person 4"
+              class="rounded-lg object-cover"
+            />
+            <img
+              src="assets/profileimage.jpg"
+              alt="Person 5"
+              class="rounded-lg object-cover"
+            />
+          </div>
+          <div class="images-slide grid grid-cols-5 gap-4 mb-8">
+            <img
+              src="assets/profileimage.jpg"
+              alt="Person 1"
+              class="rounded-lg object-cover"
+            />
+            <img
+              src="assets/profileimage.jpg"
+              alt="Person 2"
+              class="rounded-lg object-cover"
+            />
+            <img
+              src="assets/profileimage.jpg"
+              alt="Person 3"
+              class="rounded-lg object-cover"
+            />
+            <img
+              src="assets/profileimage.jpg"
+              alt="Person 4"
+              class="rounded-lg object-cover"
+            />
+            <img
+              src="assets/profileimage.jpg"
+              alt="Person 5"
+              class="rounded-lg object-cover"
+            />
+          </div>
+        </div>
+
+        <!-- Team Members -->
+        <div
+          class="team-members grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6"
+        >
+          <div class="text-center">
+            <img
+              src="assets/profileimage.jpg"
+              alt="Chirag Jain"
+              class="mb-4 mx-auto"
+            />
+            <h3 class="font-bold text-lg">Chirag Jain</h3>
+            <p class="text-gray-600">Founder & CEO</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="assets/profileimage.jpg"
+              alt="Steve Resnick"
+              class="mb-4 mx-auto"
+            />
+            <h3 class="font-bold text-lg">Steve Resnick</h3>
+            <p class="text-gray-600">President N. America</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="assets/profileimage.jpg"
+              alt="Jordan Schware"
+              class="mb-4 mx-auto"
+            />
+            <h3 class="font-bold text-lg">Jordan Schware</h3>
+            <p class="text-gray-600">SVP, Sales</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="assets/profileimage.jpg"
+              alt="Lee Whittemore"
+              class="mb-4 mx-auto"
+            />
+            <h3 class="font-bold text-lg">Lee Whittemore</h3>
+            <p class="text-gray-600">Director, C. Success</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="assets/profileimage.jpg"
+              alt="Chris Cognetta"
+              class="mb-4 mx-auto"
+            />
+            <h3 class="font-bold text-lg">Chris Cognetta</h3>
+            <p class="text-gray-600">Director, C. Success</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="assets/profileimage.jpg"
+              alt="Geremy Rodamer"
+              class="mb-4 mx-auto"
+            />
+            <h3 class="font-bold text-lg">Geremy Rodamer</h3>
+            <p class="text-gray-600">VP, Sales</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="assets/profileimage.jpg"
+              alt="Vidhi Jain"
+              class="mb-4 mx-auto"
+            />
+            <h3 class="font-bold text-lg">Vidhi Jain</h3>
+            <p class="text-gray-600">Senior Key Account Manager</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="assets/profileimage.jpg"
+              alt="Dolly Draze"
+              class="mb-4 mx-auto"
+            />
+            <h3 class="font-bold text-lg">Dolly Draze</h3>
+            <p class="text-gray-600">Marketing Manager</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="assets/profileimage.jpg"
+              alt="Shine Nagpal"
+              class="mb-4 mx-auto"
+            />
+            <h3 class="font-bold text-lg">Shine Nagpal</h3>
+            <p class="text-gray-600">Head - Global Business</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="assets/profileimage.jpg"
+              alt="Rati Singh"
+              class="mb-4 mx-auto"
+            />
+            <h3 class="font-bold text-lg">Rati Singh</h3>
+            <p class="text-gray-600">AVP - People Team</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="assets/profileimage.jpg"
+              alt="Rajesh Prabhu"
+              class="mb-4 mx-auto"
+            />
+            <h3 class="font-bold text-lg">Rajesh Prabhu</h3>
+            <p class="text-gray-600">CTO</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="assets/profileimage.jpg"
+              alt="Aditya Chauhan"
+              class="mb-4 mx-auto"
+            />
+            <h3 class="font-bold text-lg">Aditya Chauhan</h3>
+            <p class="text-gray-600">VP Engineering</p>
+          </div>
+        </div>
+
+        <!-- Lower Row of Images -->
+        <div class="images">
+          <div class="images-slide grid grid-cols-5 gap-4 mb-8">
+            <img
+              src="assets/profileimage.jpg"
+              alt="Person 1"
+              class="rounded-lg object-cover"
+            />
+            <img
+              src="assets/profileimage.jpg"
+              alt="Person 2"
+              class="rounded-lg object-cover"
+            />
+            <img
+              src="assets/profileimage.jpg"
+              alt="Person 3"
+              class="rounded-lg object-cover"
+            />
+            <img
+              src="assets/profileimage.jpg"
+              alt="Person 4"
+              class="rounded-lg object-cover"
+            />
+            <img
+              src="assets/profileimage.jpg"
+              alt="Person 5"
+              class="rounded-lg object-cover"
+            />
+          </div>
+          <div class="images-slide grid grid-cols-5 gap-4 mb-8">
+            <img
+              src="assets/profileimage.jpg"
+              alt="Person 1"
+              class="rounded-lg object-cover"
+            />
+            <img
+              src="assets/profileimage.jpg"
+              alt="Person 2"
+              class="rounded-lg object-cover"
+            />
+            <img
+              src="assets/profileimage.jpg"
+              alt="Person 3"
+              class="rounded-lg object-cover"
+            />
+            <img
+              src="assets/profileimage.jpg"
+              alt="Person 4"
+              class="rounded-lg object-cover"
+            />
+            <img
+              src="assets/profileimage.jpg"
+              alt="Person 5"
+              class="rounded-lg object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-24">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2
+            class="text-4xl font-semibold text-gray-800 capitalize leading-tight"
+          >
+            Employee Testimonials
+          </h2>
+        </div>
+        <div class="swiper testimonials-slider">
+          <div class="swiper-wrapper">
+            <!-- Testimonial Slide 1 -->
+            <div class="swiper-slide bg-gray-100 p-8 rounded-3xl">
+              <div class="flex items-center">
+                <img
+                  src="assets/profileimage.jpg"
+                  alt="img"
+                  class="w-20 h-20 rounded-full object-cover mr-5"
+                />
+                <div>
+                  <h3 class="text-xl font-semibold text-black">John Wick</h3>
+                  <span class="text-gray-600">Web Developer</span>
+                </div>
+              </div>
+              <p class="mt-5 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Veritatis expedita dolores dicta, laborum officiis sed impedit
+                eius laudantium animi pariatur!
+              </p>
+            </div>
+            <!-- Repeat swiper-slide for other testimonials -->
+            <div class="swiper-slide bg-gray-100 p-8 rounded-3xl">
+              <div class="flex items-center">
+                <img
+                  src="assets/profileimage.jpg"
+                  alt="img"
+                  class="w-20 h-20 rounded-full object-cover mr-5"
+                />
+                <div>
+                  <h3 class="text-xl font-semibold text-black">Jane Doe</h3>
+                  <span class="text-gray-600">UI/UX Designer</span>
+                </div>
+              </div>
+              <p class="mt-5 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Veritatis expedita dolores dicta, laborum officiis sed impedit
+                eius laudantium animi pariatur!
+              </p>
+            </div>
+            <div class="swiper-slide bg-gray-100 p-8 rounded-3xl">
+              <div class="flex items-center">
+                <img
+                  src="assets/profileimage.jpg"
+                  alt="img"
+                  class="w-20 h-20 rounded-full object-cover mr-5"
+                />
+                <div>
+                  <h3 class="text-xl font-semibold text-black">John Wick</h3>
+                  <span class="text-gray-600">Web Developer</span>
+                </div>
+              </div>
+              <p class="mt-5 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Veritatis expedita dolores dicta, laborum officiis sed impedit
+                eius laudantium animi pariatur!
+              </p>
+            </div>
+            <div class="swiper-slide bg-gray-100 p-8 rounded-3xl">
+              <div class="flex items-center">
+                <img
+                  src="assets/profileimage.jpg"
+                  alt="img"
+                  class="w-20 h-20 rounded-full object-cover mr-5"
+                />
+                <div>
+                  <h3 class="text-xl font-semibold text-black">John Wick</h3>
+                  <span class="text-gray-600">Web Developer</span>
+                </div>
+              </div>
+              <p class="mt-5 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Veritatis expedita dolores dicta, laborum officiis sed impedit
+                eius laudantium animi pariatur!
+              </p>
+            </div>
+            <div class="swiper-slide bg-gray-100 p-8 rounded-3xl">
+              <div class="flex items-center">
+                <img
+                  src="assets/profileimage.jpg"
+                  alt="img"
+                  class="w-20 h-20 rounded-full object-cover mr-5"
+                />
+                <div>
+                  <h3 class="text-xl font-semibold text-black">John Wick</h3>
+                  <span class="text-gray-600">Web Developer</span>
+                </div>
+              </div>
+              <p class="mt-5 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Veritatis expedita dolores dicta, laborum officiis sed impedit
+                eius laudantium animi pariatur!
+              </p>
+            </div>
+            <div class="swiper-slide bg-gray-100 p-8 rounded-3xl">
+              <div class="flex items-center">
+                <img
+                  src="assets/profileimage.jpg"
+                  alt="img"
+                  class="w-20 h-20 rounded-full object-cover mr-5"
+                />
+                <div>
+                  <h3 class="text-xl font-semibold text-black">John Wick</h3>
+                  <span class="text-gray-600">Web Developer</span>
+                </div>
+              </div>
+              <p class="mt-5 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Veritatis expedita dolores dicta, laborum officiis sed impedit
+                eius laudantium animi pariatur!
+              </p>
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-100">
+      <!-- Main Container -->
+      <div class="max-w-5xl mx-auto py-10 px-4">
+        <!-- Heading Section -->
+        <div class="text-center mb-10">
+          <h1 class="text-4xl font-bold text-gray-800">
+            A great place to work!
+          </h1>
+          <p class="mt-4 text-lg text-gray-600">
+            We prioritize growth and well-being in our flexible work
+            culture—because sometimes, you just need to park the work and rev up
+            the fun!
+          </p>
+        </div>
+        <!-- Image Grid -->
+        <div class="grid grid-cols-3 gap-4">
+          <!-- Row 1 -->
+          <div class="relative">
+            <img
+              src="assets/team.jpg"
+              alt="Image 1"
+              class="rounded-lg shadow-lg h-40 w-full object-cover"
+            />
+          </div>
+          <div class="relative">
+            <img
+              src="assets/team2.jpg"
+              alt="Image 2"
+              class="rounded-lg shadow-lg h-40 w-full object-cover"
+            />
+          </div>
+          <div class="relative">
+            <img
+              src="assets/team4.jpg"
+              alt="Image 3"
+              class="rounded-lg shadow-lg h-40 w-full object-cover"
+            />
+          </div>
+
+          <!-- Row 2 -->
+          <div class="relative">
+            <img
+              src="assets/team2.jpg"
+              alt="Image 4"
+              class="rounded-lg shadow-lg h-40 w-full object-cover"
+            />
+          </div>
+          <div class="relative">
+            <img
+              src="assets/team4.jpg"
+              alt="Image 5"
+              class="rounded-lg shadow-lg h-40 w-full object-cover"
+            />
+          </div>
+          <div class="relative">
+            <img
+              src="assets/team1.jpg"
+              alt="Image 6"
+              class="rounded-lg shadow-lg h-40 w-full object-cover"
+            />
+          </div>
+
+          <!-- Row 3 -->
+          <div class="relative">
+            <img
+              src="assets/team.jpg"
+              alt="Image 7"
+              class="rounded-lg shadow-lg h-40 w-full object-cover"
+            />
+          </div>
+          <div class="relative">
+            <img
+              src="assets/team4.jpg"
+              alt="Image 8"
+              class="rounded-lg shadow-lg h-40 w-full object-cover"
+            />
+          </div>
+          <div class="relative">
+            <img
+              src="assets/team2.jpg"
+              alt="Image 9"
+              class="rounded-lg shadow-lg h-40 w-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="flex items-center justify-center min-h-screen bg-purple-100"
+    >
+      <div
+        class="bg-purple-500 text-white p-10 rounded-lg shadow-lg max-w-full text-center"
+      >
+        <h1 class="text-3xl font-bold mb-4">Work with us!</h1>
+        <p class="text-lg mb-6">
+          Become a part of an exciting, nurturing work environment.
+        </p>
+        <button
+          class="bg-white text-green-600 font-semibold px-6 py-2 rounded-full hover:bg-green-50"
+        >
+          Join Us
+        </button>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".testimonials-slider", {
+        grabCursor: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          767: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
