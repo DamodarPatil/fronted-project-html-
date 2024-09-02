@@ -29,13 +29,12 @@
 }
 
 .images-slide img {
-  height: 20vh; /* Responsive height */
-  width: 20vw; /* Responsive width */
-  max-width: 150px; /* Set max width */
-  max-height: 150px; /* Set max height */
-  min-width: 100px; /* Set minimum width */
-  min-height: 100px; /* Set minimum height */
-  margin: 10px; /* Ensure spacing remains consistent */
+  height: 20vh;
+  width: 20vw;
+  max-width: 150px;
+  max-height: 150px; 
+  min-width: 100px;
+  min-height: 100px;
+  margin: 10px;
   object-fit: cover;
 }
-
